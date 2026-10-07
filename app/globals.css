@@ -207,6 +207,16 @@ body {
 }
 .phone-float { animation: phoneFloat 4s ease-in-out infinite; }
 
+/* ── Phone slider caption ── */
+@keyframes captionIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.slide-caption { animation: captionIn 0.5s ease-out; }
+@media (prefers-reduced-motion: reduce) {
+  .slide-caption { animation: none; }
+}
+
 /* ── Feature chips ── */
 .feature-chip {
   display: flex;

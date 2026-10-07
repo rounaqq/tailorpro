@@ -1,5 +1,6 @@
 import { APP_STORE_URL, PLAY_STORE_URL, storeLinkProps } from "@/lib/storeLinks";
 import Link from "next/link";
+import PhoneSlider from "@/components/PhoneSlider";
 
 const exclusiveFeatures = [
   {
@@ -203,23 +204,7 @@ export default function DownloadPage() {
                   "0 40px 100px rgba(0,0,0,0.7), inset 0 1px 0 rgba(255,255,255,0.04)",
               }}
             >
-              <div
-                style={{
-                  position: "absolute",
-                  inset: 0,
-                  backgroundImage: "url(/cat-bridal.jpg)",
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                }}
-              />
-              <div
-                style={{
-                  position: "absolute",
-                  inset: 0,
-                  background:
-                    "linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.1) 60%, rgba(0,0,0,0.75) 100%)",
-                }}
-              />
+              <PhoneSlider />
               {/* Notch */}
               <div
                 style={{
@@ -234,35 +219,6 @@ export default function DownloadPage() {
                   zIndex: 10,
                 }}
               />
-              {/* Status bar dots */}
-              <div
-                style={{
-                  position: "absolute",
-                  bottom: 28,
-                  left: 0,
-                  right: 0,
-                  textAlign: "center",
-                  zIndex: 5,
-                }}
-              >
-                <div
-                  style={{
-                    fontSize: 9,
-                    letterSpacing: "0.15em",
-                    color: "#c9a84c",
-                    fontWeight: 700,
-                    marginBottom: 4,
-                  }}
-                >
-                  ELANZA
-                </div>
-                <div
-                  className="font-serif"
-                  style={{ fontSize: 16, fontWeight: 700, color: "#fff" }}
-                >
-                  Crafted Just For You
-                </div>
-              </div>
             </div>
           </div>
         </div>
