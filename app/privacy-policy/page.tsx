@@ -23,17 +23,6 @@ export default function PrivacyPolicyPage() {
           style={{
             position: "absolute",
             inset: 0,
-            backgroundImage:
-              "url(https://images.unsplash.com/photo-1594938298603-c8148c4b4e78?w=1400&q=80)",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            opacity: 0.15,
-          }}
-        />
-        <div
-          style={{
-            position: "absolute",
-            inset: 0,
             background:
               "radial-gradient(ellipse at center, rgba(201,168,76,0.12) 0%, rgba(30,26,22,0.95) 80%)",
           }}

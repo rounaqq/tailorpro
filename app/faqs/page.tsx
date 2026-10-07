@@ -213,18 +213,6 @@ export default function FAQPage() {
           background: "#1e1a16",
         }}
       >
-        {/* Subtle background ambient overlay */}
-        <div
-          style={{
-            position: "absolute",
-            inset: 0,
-            backgroundImage:
-              "url(https://images.unsplash.com/photo-1594938298603-c8148c4b4e78?w=1400&q=80)",
-            backgroundSize: "cover",
-            backgroundPosition: "center 20%",
-            opacity: 0.18,
-          }}
-        />
         <div
           style={{
             position: "absolute",

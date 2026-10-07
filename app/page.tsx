@@ -228,17 +228,6 @@ export default function HomePage() {
           alignItems: "center",
         }}
       >
-        {/* Background */}
-        <div
-          style={{
-            position: "absolute",
-            inset: 0,
-            backgroundImage:
-              "url(https://images.unsplash.com/photo-1594938298603-c8148c4b4e78?w=1600&q=90)",
-            backgroundSize: "cover",
-            backgroundPosition: "center 20%",
-          }}
-        />
         {/* Overlay — dark left, transparent right */}
         <div
           style={{
