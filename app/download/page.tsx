@@ -207,10 +207,9 @@ export default function DownloadPage() {
                 style={{
                   position: "absolute",
                   inset: 0,
-                  backgroundImage:
-                    "url(https://images.unsplash.com/photo-1594938298603-c8148c4b4e78?w=600&q=85)",
+                  backgroundImage: "url(/cat-bridal.jpg)",
                   backgroundSize: "cover",
-                  backgroundPosition: "center top",
+                  backgroundPosition: "center",
                 }}
               />
               <div
@@ -218,7 +217,7 @@ export default function DownloadPage() {
                   position: "absolute",
                   inset: 0,
                   background:
-                    "linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.55) 100%)",
+                    "linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.1) 60%, rgba(0,0,0,0.75) 100%)",
                 }}
               />
               {/* Notch */}
