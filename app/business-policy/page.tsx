@@ -207,7 +207,7 @@ const policies: PolicySection[] = [
         <p style={{ marginBottom: 12 }}>
           Customers may rate completed orders based on the following parameters:
         </p>
-        <ul style={{ paddingLeft: 20, display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: 8 }}>
+        <ul style={{ paddingLeft: 20, display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(180px, 100%), 1fr))", gap: 8 }}>
           <li>✓ Overall Experience</li>
           <li>✓ Stitching Quality & Fit Accuracy</li>
           <li>✓ Punctuality</li>

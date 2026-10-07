@@ -400,13 +400,47 @@ body {
 
 @media (max-width: 768px) {
   .brand-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 40px;
   }
 
   .brand-collage {
     height: 420px;
     width: 100%;
+  }
+}
+
+/* -- Terms of Use: sidebar + content -- */
+.terms-layout {
+  grid-template-columns: 260px minmax(0, 1fr);
+}
+
+@media (max-width: 900px) {
+  .terms-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px !important;
+  }
+  .terms-layout > aside {
+    position: static !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* the wrapping <section> already provides vertical padding */
+  .terms-layout {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+/* -- Download hero: text + phone mockup (mockup hidden below lg) -- */
+.download-hero {
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+
+@media (max-width: 1023px) {
+  .download-hero {
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 

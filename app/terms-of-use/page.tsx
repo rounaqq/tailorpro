@@ -125,12 +125,11 @@ export default function TermsPage() {
       ══════════════════════════════════════════ */}
       <section style={{ background: "#fcfbf9", padding: "64px 0 96px" }}>
         <div
-          className="section"
+          className="section terms-layout"
           style={{
             maxWidth: 1100,
             margin: "0 auto",
             display: "grid",
-            gridTemplateColumns: "260px 1fr",
             gap: 48,
             alignItems: "start",
           }}
@@ -263,7 +262,7 @@ export default function TermsPage() {
                 Our refund policy ensures fair resolution for cancellations and service modifications:
               </p>
 
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 16, marginBottom: 24 }}>
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(220px, 100%), 1fr))", gap: 16, marginBottom: 24 }}>
                 <div style={{ background: "#faf8f5", padding: "20px", borderRadius: 14, border: "1px solid #eee5d8" }}>
                   <div style={{ fontSize: 18, fontWeight: 700, color: "#2c2c2c", marginBottom: 4 }}>100% Refund</div>
                   <div style={{ fontSize: 13, color: "#777" }}>Cancellations 12 hours or more before the scheduled visit.</div>
@@ -366,7 +365,7 @@ export default function TermsPage() {
                 Safety and trust are core pillars of the Elanza - From Fabric to Form platform. Every tailor undergoes a mandatory 4-step verification process before joining:
               </p>
 
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: 12, marginBottom: 24 }}>
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(180px, 100%), 1fr))", gap: 12, marginBottom: 24 }}>
                 {[
                   "Government ID Verification",
                   "Police Verification",

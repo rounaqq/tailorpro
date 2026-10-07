@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
@@ -11,32 +12,20 @@ export default function Footer() {
           maxWidth: 1200,
           margin: "0 auto",
           display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
+          gridTemplateColumns: "repeat(auto-fit, minmax(min(200px, 100%), 1fr))",
           gap: 48,
         }}
       >
         {/* Brand */}
         <div>
           <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 16 }}>
-            <div
-              style={{
-                width: 40,
-                height: 40,
-                borderRadius: "50%",
-                border: "1.5px solid #c9a84c",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                background: "rgba(255,255,255,0.05)",
-                flexShrink: 0,
-              }}
-            >
-              <svg width="20" height="20" viewBox="0 0 32 32" fill="none">
-                <circle cx="16" cy="16" r="14" stroke="#c9a84c" strokeWidth="1.5" />
-                <path d="M10 22 L16 8 L22 22" stroke="#c9a84c" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M12 17 H20" stroke="#c9a84c" strokeWidth="1.5" strokeLinecap="round" />
-              </svg>
-            </div>
+            <Image
+              src="/logo-light.png"
+              alt="Elanza logo"
+              width={72}
+              height={72}
+              style={{ flexShrink: 0 }}
+            />
             <div>
               <div
                 style={{

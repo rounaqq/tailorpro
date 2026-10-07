@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
@@ -53,25 +54,14 @@ export default function Navbar() {
           href="/"
           style={{ textDecoration: "none", display: "flex", alignItems: "center", gap: 12 }}
         >
-          <div
-            style={{
-              width: 40,
-              height: 40,
-              borderRadius: "50%",
-              border: "1.5px solid #c9a84c",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              background: "#fff",
-              flexShrink: 0,
-            }}
-          >
-            <svg width="20" height="20" viewBox="0 0 32 32" fill="none">
-              <circle cx="16" cy="16" r="14" stroke="#c9a84c" strokeWidth="1.5" />
-              <path d="M10 22 L16 8 L22 22" stroke="#c9a84c" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-              <path d="M12 17 H20" stroke="#c9a84c" strokeWidth="1.5" strokeLinecap="round" />
-            </svg>
-          </div>
+          <Image
+            src={scrolled ? "/logo.png" : "/logo-light.png"}
+            alt="Elanza logo"
+            width={56}
+            height={56}
+            priority
+            style={{ flexShrink: 0 }}
+          />
           <div>
             <div
               style={{

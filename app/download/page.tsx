@@ -1,3 +1,4 @@
+import { APP_STORE_URL, PLAY_STORE_URL, storeLinkProps } from "@/lib/storeLinks";
 import Link from "next/link";
 
 const exclusiveFeatures = [
@@ -64,12 +65,11 @@ export default function DownloadPage() {
         ))}
 
         <div
-          className="section"
+          className="section download-hero"
           style={{
             position: "relative",
             zIndex: 1,
             display: "grid",
-            gridTemplateColumns: "1fr auto",
             gap: 80,
             alignItems: "center",
           }}
@@ -119,7 +119,7 @@ export default function DownloadPage() {
             {/* Badges */}
             <div style={{ display: "flex", gap: 16, flexWrap: "wrap", marginBottom: 48 }}>
               <a
-                href="#"
+                {...storeLinkProps(APP_STORE_URL)}
                 style={{
                   display: "flex",
                   alignItems: "center",
@@ -141,7 +141,7 @@ export default function DownloadPage() {
               </a>
 
               <a
-                href="#"
+                {...storeLinkProps(PLAY_STORE_URL)}
                 style={{
                   display: "flex",
                   alignItems: "center",
@@ -298,7 +298,7 @@ export default function DownloadPage() {
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+              gridTemplateColumns: "repeat(auto-fit, minmax(min(300px, 100%), 1fr))",
               gap: 24,
             }}
           >
@@ -389,7 +389,7 @@ export default function DownloadPage() {
           </p>
           <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
             <a
-              href="#"
+              {...storeLinkProps(APP_STORE_URL)}
               style={{
                 display: "flex",
                 alignItems: "center",
@@ -409,7 +409,7 @@ export default function DownloadPage() {
               </div>
             </a>
             <a
-              href="#"
+              {...storeLinkProps(PLAY_STORE_URL)}
               style={{
                 display: "flex",
                 alignItems: "center",
